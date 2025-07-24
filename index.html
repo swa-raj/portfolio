@@ -1,41 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Swaraj CV - Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #111; color: white; padding: 20px; text-align: center; }
-    .container { padding: 20px; max-width: 800px; margin: auto; background: white; }
-    h2 { color: #333; }
-    .project { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
-    .footer { text-align: center; padding: 10px; background: #111; color: white; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      background: white;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #222;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .project, .experience, .activity {
+      margin-bottom: 20px;
+    }
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills li {
+      background: #eee;
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 4px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Swaraj C V</h1>
-    <p>Web Developer • Shopify Learner • CS Student</p>
+    <p>Web Developer • Computer Science Engineer • Shopify Learner</p>
+    <p>Email: <a href="mailto:swarajcv08@gmail.com" style="color: #ccc;">swarajcv08@gmail.com</a> | Ph: 8618136892</p>
   </header>
+
   <div class="container">
-    <h2>About Me</h2>
-    <p>I’m a Computer Science student interested in building clean and responsive web interfaces. I'm currently exploring Shopify theme development and Liquid templating.</p>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Responsive Portfolio Website</h3>
-      <p>Built using HTML/CSS. Focused on layout, responsiveness, and design aesthetics. <br> <strong>Live:</strong> [Add GitHub link if available]</p>
-    </div>
+    <section>
+      <h2>About Me</h2>
+      <p>Motivated Computer Science student passionate about problem-solving, clean code, and user-focused design. Actively exploring Shopify theme development and Liquid, with strong foundations in front-end and back-end technologies. Led student initiatives and organized workshops on cutting-edge tech like Generative AI and Data Science.</p>
+    </section>
 
-    <div class="project">
-      <h3>UI Design Mockups (Canva/Figma)</h3>
-      <p>Designed basic homepage and product card layouts for e-commerce using Canva. <br> <strong>Link:</strong> [Add Figma/Canva link]</p>
-    </div>
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>ConnectHub (Jul 2023 - Dec 2023)</h3>
+        <p>Responsive web app to connect students and professionals. Built with HTML, CSS, and JavaScript. Includes user profiles, messaging, and dynamic rendering.</p>
+      </div>
+      <div class="project">
+        <h3>Student Management System (Jul 2024 - Dec 2024)</h3>
+        <p>Java + Spring based system to automate academic tasks, track performance, and reduce paperwork by 40%.</p>
+      </div>
+      <div class="project">
+        <h3>LL(1) Parser (Jan 2025 - Apr 2025)</h3>
+        <p>Mini compiler project using Python. Implemented lexical analysis and recursive descent parsing logic.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Git</li>
+        <li>VS Code</li>
+        <li>Jupyter</li>
+        <li>R Programming</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Research Intern, NMAMIT, Nitte (Aug 2022 - Feb 2023)</h3>
+        <p>Researched electric vehicle adoption trends. Projected 40% growth by 2030 and 25% carbon reduction. Analyzed urban energy efficiency improvements.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership & Activities</h2>
+      <div class="activity">
+        <p><strong>President – Indian Society for Technical Education</strong><br>
+        Organized workshops and led PR strategies, boosting event attendance and technical engagement on campus.</p>
+      </div>
+      <div class="activity">
+        <p><strong>Volunteer – College Fest</strong><br>
+        Helped coordinate large-scale student events, managing logistics and ensuring smooth execution.</p>
+      </div>
+    </section>
+
   </div>
 
-  <div class="footer">
-    &copy; 2025 Swaraj CV | Email: yourmail@example.com
-  </div>
+  <footer>
+    &copy; 2025 Swaraj C V | Designed by Swaraj
+  </footer>
+
 </body>
 </html>
